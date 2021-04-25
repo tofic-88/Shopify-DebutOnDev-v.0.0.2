@@ -1,0 +1,279 @@
+
+/*--------------------------------------*/
+
+/*===============from here the custom styles applied to this theme =====*/
+/*.hero .mega-title {
+    color: #545454;
+  }
+*/
+.collection-hero__title{
+  top: 175px;
+}
+
+
+
+.flickity-button {
+    background: #fa541c7a;
+}
+
+.mega-subtitle p {
+  /*color: #F58888;*/
+  font-weight: bold;
+} 
+.hero__btn { 
+    margin-top: 75px;
+}
+.collection-hero{
+  margin-bottom: 0px;
+}
+.filters-toolbar__item--count{display: none;}
+/*
+.jdgm-rev-widg.jdgm-rev-widg {
+    margin-left: 25px;
+}*/
+
+ .jdgm-branding-footer{display: none}
+ /*removing link from the logo in checkout page*/
+ .logo__image{
+        cursor: not-allowed;
+        pointer-events: none;  
+        border: 4px solid red;       
+  }
+
+ /*removing mouse over link on products card titles*/
+}
+.product-card__title {
+  border-bottom: none; }
+
+.product-card__title:hover {
+color: #ffa41c !important;
+} /* make some search to resolve it*/
+.grid-active{display: none;}
+
+
+.jdgm-quest, .jdgm-rev {
+    border-top: 1px solid #000000; 
+}
+
+/*@import "custom.css"*/
+/*Note: because import dont work then the file custom.css no necessary at this moment*/
+
+.btn--secondary {
+    background: black;
+    color: white;
+}
+.jdgm-carousel-item{
+  border-right: 3px solid gray  !important;
+}
+.jdgm-carousel__item-container{
+  border-left: 3px solid gray  !important;
+}
+.jdgm-rev-widg{
+    border: 1px solid #9F9F9F  !important;
+}
+.jdgm-rev-widg{
+background: #F8F8F8;
+}
+.jdgm-rev{
+    border-top: 1px solid #9F9F9F  !important;
+}
+/*responsive next */
+/*@media only screen and (min-width: 750px){
+  .btn {
+    
+}
+}*/
+
+/*Currency selector*/
+
+form#currency_form{
+  position: fixed;
+  bottom: 3%;
+  left: 2%;
+  border: 1px solid;
+  z-index: 999;
+}
+
+/*hide it on the footer*/
+.scs-custom-currency-to-hide-this{
+  display: none;
+}
+/*---------------END*/
+
+
+/*customize section-header in page and contact page*/
+.main-content{
+  padding-top: 0px !important;
+}
+
+/*
+#Hero-hero{
+   background-image: url(scipionheader-20.gif);
+}
+*/
+.custom-product-page-title{
+ /*background: black;*/
+ background-image: url(product-page-banner-2.gif);
+ color: #F58888;
+ padding: 136px 0 10px 0;
+ /*margin-top: -58px;*/
+ background-position: 50% 50%;
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 350px;
+ max-width: none;
+}
+
+/*--------------------------------*/
+.scs-custom-singl-product-page{
+  margin-bottom: 55px;
+}
+
+/*Cart button*/
+
+.btn--secondary-accent {
+    background-color: #0c0c0c;
+    color: #f5f5f5;
+}
+.custom-cart-title{
+ background: black;
+ color: white;
+ padding: 20px 0;
+}
+.custom-section-header{
+ background: black;
+ color: white;
+ padding: 20px 0 10px 0;
+}
+
+.custom-contact-page-header{
+   padding: 20px 0 10px 0;
+}
+
+.custom-page-page-header{
+  background: black;
+  color: white;
+}
+
+/*-----------------------------------------------------------*/
+/* This APP: the responsive from here mobile
+/*----------------------------------------------------------*/
+
+
+/*.site-footer__item-inner--text{ font-size: 2.2em; }*/
+
+
+
+
+@media only screen and (max-width: 749px){
+
+ 
+
+  .collection-hero__title{
+  top: 110px;
+}
+
+
+  #shopify-section-1616881616b2db9ff9{
+    display: none;
+  }
+
+  .scs-custom-product-page-single-title{
+    font-size: 1.1em;
+  }
+
+  .scs-custom-section-header {
+      margin-bottom: 0px;
+  }
+  /*page product title header...*/
+  .custom-product-page-title{
+    /*padding-top: 70px;*/
+      height: 160px;
+      /*background-image: url(mobile-banner.gif);*/
+    /*margin-top: -40px;*/
+  }
+
+
+.mega-subtitle{
+  margin-top: 30px;
+} 
+
+
+.mega-title--large {
+    display: none;
+  }
+
+
+.hero__btn { 
+    margin-top: 0px; 
+    font-size: small;
+}
+
+.fix-shared-content-blow-last-tabs>img {
+    width: 100%;
+}
+
+.logo-align--left{
+  width: 100% !important;
+}
+
+/*TO HIDE THIS IN MOBILE*/
+.to-hide-this-in-mobile{display: none;}
+
+}
+
+
+/*TO DISPLAY JUSTE FOR Desktop*/
+@media only screen and (min-width: 749px){
+
+  .to-hide-this-in-pc-and-tablette{display: none;}
+
+}
+
+
+
+/*custom price for featured collection*/
+
+.product__product-price, .product__compare-at-price{
+  font-weight: bold;
+}
+
+.product__product-price{color:#587F65;}
+/*
+.product__compare-at-price{}
+*/
+.you-save{
+  margin-top: 5px;
+  color: white;
+  font-weight: bold;
+  background: #FBCD0A;
+  width: 100%;
+  text-align: center;
+  padding: 3px;
+}
+
+/*------------------*/
+.scps-class-tags-content{
+  margin-top: 60px
+  /*padding-top: 10px;*/
+}
+
+.one-third-column {
+width:32%;
+margin-right:2%;
+float:left;
+}
+.one-third-column-last {
+width:32%;
+margin-right:0;
+float:right;
+}
+
+@media only screen and (max-width: 600px) {
+.one-half-column-left, .one-half-column-right, 
+.one-third-column, .one-third-column-last {
+float:none;
+width:100%;
+margin-right:0;
+}
+}

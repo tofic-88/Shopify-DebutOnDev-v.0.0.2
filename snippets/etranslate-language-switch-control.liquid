@@ -1,0 +1,149 @@
+{% include 'etranslate-language-fix-selector' %}
+{% include 'etranslate-language-float-selector' %}
+{% include 'etranslate-language-float-link-selector' %}
+<script>
+  function mediaReplace(){
+    var img_dome = document.getElementsByTagName('img')
+    var media_file = {{shop.metafields.etranslate.media_config | json}}
+    if(!media_file) {return ''}
+    var source_url = media_file.source_url
+    var replace_url = media_file.replace_url
+    if(source_url && source_url[0]){
+      for(var s=0; s<source_url.length; s++){
+        var end_url = source_url[s].url_content.length > 30 ? source_url[s].url_content.length-30 : source_url[s].url_content.length
+        var replace_srcset_url = source_url[s].url_content.substring(25, end_url)
+        for(var i=0; i<img_dome.length; i++){
+          var srcset_url = img_dome[i].srcset
+          var srcset_url_situ = img_dome[i].dataset.src
+          srcset_url = srcset_url ? img_dome[i].getAttribute('data-srcset') : srcset_url
+          srcset_url_situ = srcset_url_situ ? img_dome[i].getAttribute('data-src') : srcset_url_situ
+          srcset_url = srcset_url ? srcset_url : srcset_url
+          srcset_url_situ = srcset_url_situ ? srcset_url_situ : srcset_url_situ
+          if(img_dome[i].src == source_url[s].url_content || (srcset_url && srcset_url.indexOf(replace_srcset_url) >= 0) || img_dome[i].src.indexOf(replace_srcset_url) >= 0 || (srcset_url_situ && srcset_url_situ.indexOf(replace_srcset_url) >= 0)){
+            findReplace(replace_url, source_url[s].id, img_dome[i], srcset_url)
+          }
+        }
+      }
+    }
+  }
+  
+  // replace url
+function findReplace(h,c,d,e){var g=getMediaLanguageList();var k=g.find(function(a){return a.primary});var j=k?k.iso_code:"en";var b=getMediaCurrentLocale(g,j);for(var i=0;i<h.length;i++){if(h[i].parent_id==c&&h[i].lan_code.toLowerCase()==b.toLowerCase()){if(h[i].url_content){d.src=h[i].url_content;d.style.opacity=1;d.setAttribute("data-src",h[i].url_content);if(e){var f=h[i].url_content.substring(6);d.srcset=h[i].url_content}}}}};
+  
+  function getMediaCurrentLocale(languages, defaultLocale) {
+    var path = window.location.pathname.split('/').filter(function (x) { return x; });
+    if (path && path.length > 0 && languages.find(function (x) { return x.iso_code.toLowerCase() === path[0].toLowerCase(); })) {
+      return path[0];
+    } else {
+      return defaultLocale;
+    }
+  }
+  
+  function getMediaLanguageList() {
+      return [
+        {%- for locale in shop.published_locales %}
+        {
+          name: '{{locale.name}}',
+          endonym_name: '{{locale.endonym_name}}',
+          iso_code: '{{locale.iso_code}}',
+          primary: {{locale.primary}},
+        }{% unless forloop.last %},{% endunless -%}
+        {%- endfor %}
+      ];
+  }
+  
+  documentMediaReady(mediaReplace);
+  function documentMediaReady(fu) {
+     var media_time = {{ shop.metafields.etranslate-app.effective-time |json}}
+     var myDate = new Date();
+     var compare_data = compareDate(media_time,myDate)
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      setTimeout(documentReady(mediaReplace), 1);
+    } else {
+       if(compare_data){
+        setTimeout(fu, 800);
+       }
+    }
+  }
+  
+  if (document.addEventListener) {//firefox 
+    document.addEventListener('DOMMouseScroll', scrollFunc); 
+  }
+  window.onmousewheel = document.onmousewheel = scrollFunc;
+  
+  document.addEventListener("touchstart", scrollFunc, false);
+  
+  var scroll_time = null;
+  function scrollFunc(){
+    if(scroll_time){
+      window.clearTimeout(scroll_time)
+      scroll_time = null;
+    }
+    scroll_time=setTimeout(mediaReplace, 1000);
+  }
+  
+function compareDate(d,b){var a=false;if(!d){return true}var c=d.split("-");if(c[0]>b.getFullYear()){a=true}else{if(c[0]==b.getFullYear()){if(c[1]>b.getMonth()){a=true}else{if(c[1]==b.getMonth()){if(c[2]>b.getDate()){a=true}}}}}return a};
+  
+  function replaceMenuData(){
+    var a_dome = document.getElementsByTagName('a')
+    var languageList = getMediaLanguageList();
+    var primaryLanguage = languageList.find(function (x) { return x.primary; });
+    var defaultLocale = primaryLanguage ? primaryLanguage.iso_code : 'en';
+    var currentLocale = getMediaCurrentLocale(languageList, defaultLocale);
+    var pathname = window.location.pathname
+    var url_lan_code = (pathname.match(/\/(\S*?)\//) || pathname.match(/\/(\S*)/))[1]
+    var lan_code = ''
+    for(var i=0; i<a_dome.length; i++){
+      if(a_dome[i].getAttribute('href')){
+        var dome_href_array = a_dome[i].getAttribute('href').split('-')
+        if(dome_href_array[0] == '#Etranslate'){
+          var new_pathname = '/'
+          var code_array = []
+          for(var d=1;d<dome_href_array.length;d++){
+            code_array.push(dome_href_array[d])
+          }
+          lan_code = code_array.join("-") ? code_array.join("-").toLowerCase() : code_array.join("-")
+          if(lan_code){
+              if(lan_code == defaultLocale.toLowerCase()){
+                  new_pathname = pathname.replace('/' + url_lan_code, '')
+            } else {
+                var find_lan_code=false;
+                  languageList.map((v,k)=>{
+                      if(v.iso_code.toLowerCase()===url_lan_code.toLowerCase()){
+                          find_lan_code=true
+                      }
+                  })
+                  if(find_lan_code){
+                      new_pathname = pathname.replace(url_lan_code, lan_code)
+                  } else {
+                      new_pathname = '/' + lan_code + pathname
+                  }
+            }
+            var change_href = `${window.location.protocol}//${window.location.host}${new_pathname}${window.location.search}`
+            a_dome[i].setAttribute("href",change_href);
+            a_dome[i].setAttribute("data-lancode",lan_code);
+          }
+        }
+      }
+    }
+    setLocalStorage()
+  }
+  
+  function setLocalStorage(){var a_dome=document.getElementsByTagName("a");for(var i=0;i<a_dome.length;i++){var lan_code=a_dome[i].getAttribute("data-lancode");if(lan_code){a_dome[i].onclick=changeLocalStorage(lan_code);children=a_dome[i].childNodes;if(children){for(var c=0;c<children.length;c++){if(children[c].nodeName!="#text"){children[c].onclick=changeLocalStorage(lan_code)}}}}}};
+  
+  function changeLocalStorage(lan_code){
+    return function() {
+      localStorage.setItem('lan_code', lan_code);
+    }
+  }
+  
+  documentMenuReady(replaceMenuData);
+
+  function documentMenuReady(fu) {
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      setTimeout(documentReady(mediaReplace), 1);
+    } else {
+      setTimeout(fu, 500);
+    }
+  }
+</script>

@@ -1,0 +1,949 @@
+{
+  "current": {
+    "color_text": "#000000",
+    "color_body_text": "#6d6d6d",
+    "color_sale_text": "#2a5c3b",
+    "color_button": "#000000",
+    "color_button_text": "#ffffff",
+    "color_small_button_text_border": "#162950",
+    "color_text_field_text": "#162950",
+    "color_text_field_border": "#909090",
+    "color_text_field": "#ffffff",
+    "color_image_overlay_text": "#ffffff",
+    "color_image_overlay": "#000000",
+    "image_overlay_opacity": 23,
+    "color_borders": "#e4e4e4",
+    "color_body_bg": "#ffffff",
+    "type_header_font": "asap_n7",
+    "type_header_base_size": 20,
+    "type_base_font": "muli_n4",
+    "type_base_size": 17,
+    "predictive_search_show_price": true,
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "social_twitter_link": "",
+    "social_facebook_link": "https:\/\/www.facebook.com\/scipionstore",
+    "social_pinterest_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/scipionstore\/",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCujzC8oTr5srolDkbb12RCQ",
+    "social_vimeo_link": "",
+    "favicon": "",
+    "enable_ajax": true,
+    "language_switcher_enabled": false,
+    "language_switcher_flags": true,
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo-8.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#f8f8f8",
+    "checkout_heading_font": "Roboto",
+    "checkout_body_font": "Source Sans Pro",
+    "checkout_accent_color": "#162950",
+    "checkout_button_color": "#000000",
+    "checkout_error_color": "#da2f0c",
+    "mlvedaACS_roundDecimal": false,
+    "mlvedaACS_autoSwitch": false,
+    "mlvedaACS_messageContent": "<<shop.name>> process all orders in <<shop.currency>>. While the content of your cart is currently displayed in <<shop.selected_currency>>, you will checkout using <<shop.currency>> at the most current exchange rate.",
+    "mlvedaACS_positionTop": "10px",
+    "mlvedaACS_isCustomized": true,
+    "mlvedaACS_positionRight": "10px",
+    "mlvedaACS_borderLook": false,
+    "mlvedaACS_positionLeft": "10px",
+    "mlvedaACS_defaultCurrency": "CAD",
+    "mlvedaACS_textColor": "inherit",
+    "mlvedaACS_flagStyle": "circle",
+    "mlvedaACS_isMessageDisplay": true,
+    "mlvedaACS_positionBottom": "10px",
+    "mlvedaACS_messageBackgroundColor": "inherit",
+    "mlvedaACS_roundDecimalValue": 1,
+    "mlvedaACS_backgroundColor": "inherit",
+    "mlvedaACS_position": "inline",
+    "mlvedaACS_messageColor": "inherit",
+    "mlvedaACS_textHoverColor": "inherit",
+    "mlvedaACS_enable": true,
+    "mlvedaACS_supportedCurrencies": "CAD USD",
+    "mlvedaACS_hideDecimal": false,
+    "mlvedaACS_hoverBackgroundColor": "inherit",
+    "mlvedaACS_currencyFormat": "money_with_currency_format",
+    "mlvedaACS_borderLineColor": "inherit",
+    "mlvedaACS_displayFlag": false,
+    "sections": {
+      "161281616483e81798": {
+        "type": "featured-product",
+        "settings": {
+          "featured_product": "led-print-3d-moon-lamp-night-lights-16-colors-with-remote-control",
+          "show_quantity_selector": true,
+          "show_vendor": false,
+          "enable_payment_button": true,
+          "show_share_buttons": true,
+          "media_size": "medium",
+          "enable_image_zoom": true,
+          "enable_video_looping": true
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "text": {
+            "type": "text",
+            "settings": {
+              "title": "About Us",
+              "text": "<p>Scipion Store is an online store, which specializing in  the sale of smart products and tools.<\/p>"
+            }
+          },
+          "link_list": {
+            "type": "link_list",
+            "settings": {
+              "title": "Usage Policy",
+              "menu": "quick-links"
+            }
+          },
+          "1fde9553-8487-47ae-b0f1-00dc5d01ccb3": {
+            "type": "text",
+            "settings": {
+              "title": "Contact Us",
+              "text": "<p>info@scipion-store.com<br\/>sales@scipion-store.com<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "text",
+          "link_list",
+          "1fde9553-8487-47ae-b0f1-00dc5d01ccb3"
+        ],
+        "settings": {
+          "show_payment_icons": true,
+          "color_footer_bg": "#f8f8f8",
+          "color_footer_text": "#6d6d6d",
+          "show_locale_selector": true,
+          "show_currency_selector": true
+        }
+      },
+      "hero": {
+        "type": "hero",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/SCIPION.png",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "adapt",
+          "text_size": "large",
+          "title": "✨A Healthy Lifestyle Starts with a Cup of Fresh Juice Everyday, Everywhere, Anywhere!!!✨",
+          "text": "<p>Smart Products &amp; Tools<\/p>",
+          "button_label": "SHOP Now",
+          "button_link": "shopify:\/\/products\/mini-usb-electric-fruit-citrus-lemon-juicer"
+        }
+      },
+      "161773909507d815c5": {
+        "type": "hero",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/HD_Banner_b0d3997f-3662-4ff7-8fbd-58b5aa4f29bd.png",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "medium",
+          "text_size": "medium",
+          "title": "Image with text overlay",
+          "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+          "button_label": ""
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "blog_show_author": true,
+          "blog_show_date": true,
+          "show_share_buttons": true
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "show_quantity_selector": true,
+          "show_vendor": false,
+          "enable_payment_button": true,
+          "show_share_buttons": false,
+          "media_size": "medium",
+          "enable_image_zoom": true,
+          "enable_video_looping": true
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "layout": "grid",
+          "blog_show_author": true,
+          "blog_show_date": false
+        }
+      },
+      "16125498142fc86b63": {
+        "type": "judgeme_carousel_section",
+        "disabled": true,
+        "settings": {
+          "maxwidth": 1920
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_ajax_enable": true,
+          "cart_notes_enable": true
+        }
+      },
+      "1616927021f0f3ccd3": {
+        "type": "video",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/1690073145260.jpg",
+          "image_position": "center center",
+          "video_link": "https:\/\/youtu.be\/a1VXNzPt9H8",
+          "show_overlay": false,
+          "style": "background",
+          "height": "medium",
+          "video_title": "WOW!!! GET 50% OFF  & FREE SHIPPING!!",
+          "text_size": "medium"
+        }
+      },
+      "1615942350e142bc21": {
+        "type": "hero",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/usb-juicer-1.jpg",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "medium",
+          "text_size": "medium",
+          "title": "",
+          "text": "",
+          "button_label": ""
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "blocks": {
+          "c2955832-e9ed-460f-982f-5a98e9eec9d0": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "c2955832-e9ed-460f-982f-5a98e9eec9d0"
+        ],
+        "settings": {
+          "display_type": "all",
+          "sort": "alphabetical",
+          "grid": 3
+        }
+      },
+      "16097975494e00e1b4": {
+        "type": "collection-list",
+        "disabled": true,
+        "blocks": {
+          "57743670-089a-4981-acca-b38d4dcd7f4e": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "kitchen-items"
+            }
+          },
+          "16097975494e00e1b4-2": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "home-items"
+            }
+          },
+          "f186e102-52c7-439d-8919-4afd19f5bcfb": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "bathroom-items"
+            }
+          },
+          "e74af8e6-6061-491a-9935-dc9bbd75c618": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "new-arrivals-items"
+            }
+          }
+        },
+        "block_order": [
+          "57743670-089a-4981-acca-b38d4dcd7f4e",
+          "16097975494e00e1b4-2",
+          "f186e102-52c7-439d-8919-4afd19f5bcfb",
+          "e74af8e6-6061-491a-9935-dc9bbd75c618"
+        ],
+        "settings": {
+          "title": "shop by category",
+          "grid": 4
+        }
+      },
+      "161787520511d4bdc8": {
+        "type": "rich-text",
+        "settings": {
+          "full_width": true,
+          "section_title": "",
+          "text": "<p><em><strong>✨✨✨Moon lamp adjustable brightness, fully of mystery and romance atmosphere, it is a dreamlike and creative gift for Christmas, Valentine&#x27;s Day, birthdays, party, wedding, anniversary, housewarming, lover, kids, children bedroom, living room, nursery room, for <\/strong><\/em><a href=\"\/products\/led-print-3d-moon-lamp-night-lights-16-colors-with-remote-control\" title=\"LED Print 3D Moon Lamp Night Lights 16 Colors With Remote Control\"><em><strong>everywhere.✨<\/strong><\/em><\/a><em><strong>✨✨<\/strong><\/em><\/p><p><\/p>",
+          "text_size": "large"
+        }
+      },
+      "16177391619a61955e": {
+        "type": "rich-text",
+        "disabled": true,
+        "settings": {
+          "full_width": true,
+          "section_title": "✨✨!✨A Healthy Lifestyle Starts with a Cup of Fresh Juice Everyday, Everywhere, Anywhere!!!✨!✨✨",
+          "text": "",
+          "text_size": "medium"
+        }
+      },
+      "1610000588edf0a820": {
+        "type": "newsletter",
+        "settings": {
+          "section_title": "Subscribe to our newsletter",
+          "subheading": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>",
+          "show_background": false
+        }
+      },
+      "1616881616b2db9ff9": {
+        "type": "logo-bar",
+        "disabled": true,
+        "blocks": {
+          "1616881616b2db9ff9-0": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/lemon-juicer-8.png",
+              "link": "https:\/\/scipion-store.com\/products\/mini-usb-electric-fruit-citrus-lemon-juicer?variant=38036322058393"
+            }
+          },
+          "1616881616b2db9ff9-1": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/lemon-juicer-4.png",
+              "link": "https:\/\/scipion-store.com\/products\/mini-usb-electric-fruit-citrus-lemon-juicer?variant=38036321992857"
+            }
+          },
+          "1616881616b2db9ff9-2": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/lemon-juicer-6.png",
+              "link": "https:\/\/scipion-store.com\/products\/mini-usb-electric-fruit-citrus-lemon-juicer?variant=38036322091161"
+            }
+          },
+          "1616881616b2db9ff9-3": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/lemon-juicer-2.png",
+              "link": "https:\/\/scipion-store.com\/products\/mini-usb-electric-fruit-citrus-lemon-juicer?variant=38036322156697"
+            }
+          }
+        },
+        "block_order": [
+          "1616881616b2db9ff9-0",
+          "1616881616b2db9ff9-1",
+          "1616881616b2db9ff9-2",
+          "1616881616b2db9ff9-3"
+        ],
+        "settings": {
+          "title": "4 colors available"
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "layout": "grid",
+          "grid": 5,
+          "rows": 4,
+          "show_collection_image": true,
+          "show_vendor": false,
+          "sort_enable": true,
+          "tags_enable": false
+        }
+      },
+      "1617071060a57074b0": {
+        "type": "feature-columns",
+        "disabled": true,
+        "blocks": {
+          "1617071060a57074b0-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/164240430_749796489231212_1902958951228655846_n.jpg",
+              "title": "INGREDIENTS",
+              "text": "<p>1 cup milk of choice.<br\/><\/p><p>1\/4 cup yogurt of choice.<br\/><\/p><p>1 cup fresh and sliced fruit of choice.<br\/><\/p><p>1 scoop vanilla protein powder.<br\/><\/p><p>1 scoop maple syrup, or sweetener of choice.  <\/p>",
+              "button_label": "get yours now",
+              "button_link": "shopify:\/\/products\/mini-usb-electric-fruit-citrus-lemon-juicer"
+            }
+          },
+          "1617071060a57074b0-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/51157265_398018557433693_3271819795904856064_n.jpg",
+              "title": "DIRECTIONS",
+              "text": "<p> Add all ingredients to your Mini juicer.<br\/><\/p><p>Press start button and wait a few seconds.<br\/><\/p><p><\/p>",
+              "button_label": "get yours now",
+              "button_link": "shopify:\/\/products\/mini-usb-electric-fruit-citrus-lemon-juicer"
+            }
+          },
+          "1617071060a57074b0-2": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/61DRbzhwmTL._AC_SL1500.jpg",
+              "title": "READY TO SERVE",
+              "text": "<p>It&#x27;s ready!! Enjoy!<\/p>",
+              "button_label": "Get yours Now",
+              "button_link": "shopify:\/\/products\/mini-usb-electric-fruit-citrus-lemon-juicer"
+            }
+          }
+        },
+        "block_order": [
+          "1617071060a57074b0-0",
+          "1617071060a57074b0-1",
+          "1617071060a57074b0-2"
+        ],
+        "settings": {
+          "title": "",
+          "align_text": "left"
+        }
+      },
+      "16170720046c7a6896": {
+        "type": "rich-text",
+        "settings": {
+          "full_width": true,
+          "section_title": "✨Make your favorite, healthy smoothie Anywhere, Everywhere!!✨",
+          "text": "",
+          "text_size": "large"
+        }
+      },
+      "1613899472bec48dba": {
+        "type": "Feature-slider",
+        "disabled": true,
+        "settings": {
+          "collection_main": "new-arrivals-items",
+          "collection_limit": 5,
+          "bg": "rgba(0,0,0,0)",
+          "title": "New Arrivals Products",
+          "img_width": 250,
+          "cell_align": "center",
+          "title_mb": 36,
+          "cell_width": "25%",
+          "wrap_around": "true",
+          "mr": 14
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "align_logo": "left",
+          "logo": "shopify:\/\/shop_images\/logo-8.png",
+          "logo_max_width": 250,
+          "main_linklist": "main-menu",
+          "message": true,
+          "home_page_only": true,
+          "message_text": "🔥🔥50% OFF & FREE SHIPPING 🔥🔥",
+          "message_link": "shopify:\/\/products\/printing-moon-light-valentines-day-christmas-gift",
+          "color_bg": "#000000",
+          "color_text": "#ffffff"
+        }
+      },
+      "slideshow": {
+        "type": "slideshow",
+        "disabled": true,
+        "blocks": {
+          "1492095993817": {
+            "type": "image",
+            "settings": {
+              "alignment": "center center",
+              "slide_title": "Image slide",
+              "subheading": "Tell your brand's story through images",
+              "button_label": ""
+            }
+          },
+          "slideshow-0": {
+            "type": "image",
+            "settings": {
+              "alignment": "center center",
+              "slide_title": "Image slide",
+              "subheading": "Tell your brand's story through images",
+              "button_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "slideshow-0",
+          "1492095993817"
+        ],
+        "settings": {
+          "slideshow_height": "medium",
+          "text_size": "medium",
+          "text_alignment": "center center",
+          "show_overlay": true,
+          "autorotate": false,
+          "autorotate_speed": 5
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "You may also like",
+          "show_vendor": false
+        }
+      },
+      "16139008043dff24ee": {
+        "type": "collection",
+        "disabled": true,
+        "settings": {
+          "title": "New Arrivals Products",
+          "collection": "new-arrivals-items",
+          "grid": 5,
+          "rows": 3,
+          "show_vendor": false,
+          "show_view_all": true
+        }
+      },
+      "16168783282125cb25": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Lifestyle-1.png",
+          "layout": "left",
+          "title": "✨Mini USB Electric Fruit Citrus Lemon Juicer✨",
+          "text": "<p>Personal Size Blender Shakes and Smoothies Mini  Electric and Portable Juicer Cup USB Rechargeable  for Office, School, Home, Outdoors, Travel, Gym and Sports and more..<\/p>",
+          "button_label": "Buy Now",
+          "button_link": "https:\/\/scipion-store.com\/products\/mini-usb-electric-fruit-citrus-lemon-juicer"
+        }
+      },
+      "1618713318f600c20d": {
+        "type": "featured-product",
+        "settings": {
+          "featured_product": "mini-usb-electric-fruit-citrus-lemon-juicer",
+          "show_quantity_selector": true,
+          "show_vendor": false,
+          "enable_payment_button": true,
+          "show_share_buttons": true,
+          "media_size": "medium",
+          "enable_image_zoom": true,
+          "enable_video_looping": true
+        }
+      },
+      "1618713836d8d4ce63": {
+        "type": "rich-text",
+        "settings": {
+          "full_width": true,
+          "section_title": "🔥🔥SAVE 50% & FREE SHIPPING  ON ALL PRODUCTS🔥🔥",
+          "text": "",
+          "text_size": "large"
+        }
+      }
+    },
+    "content_for_index": [
+      "hero",
+      "1618713836d8d4ce63",
+      "1618713318f600c20d",
+      "161787520511d4bdc8",
+      "161281616483e81798",
+      "16177391619a61955e",
+      "1610000588edf0a820",
+      "16170720046c7a6896",
+      "16168783282125cb25",
+      "1616927021f0f3ccd3",
+      "1616881616b2db9ff9",
+      "1617071060a57074b0",
+      "1615942350e142bc21",
+      "16139008043dff24ee",
+      "16097975494e00e1b4",
+      "1613899472bec48dba",
+      "16125498142fc86b63",
+      "161773909507d815c5"
+    ]
+  },
+  "presets": {
+    "Light": {
+      "checkout_body_font": "Source Sans Pro",
+      "social_youtube_link": "",
+      "type_header_base_size": 26,
+      "share_twitter": true,
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "color_small_button_text_border": "#162950",
+      "checkout_input_background_color_mode": "white",
+      "social_pinterest_link": "",
+      "color_button": "#DA2F0C",
+      "color_body_text": "#6d6d6d",
+      "checkout_header_image": "",
+      "color_text": "#162950",
+      "social_instagram_link": "",
+      "checkout_error_color": "#ff6d6d",
+      "social_tumblr_link": "",
+      "checkout_body_background_color": "#ffffff",
+      "color_text_field_text": "#162950",
+      "checkout_sidebar_background_image": "",
+      "image_overlay_opacity": 40,
+      "checkout_heading_font": "Roboto",
+      "share_facebook": true,
+      "favicon": "",
+      "social_facebook_link": "",
+      "social_vimeo_link": "",
+      "checkout_accent_color": "#1990c6",
+      "color_sale_text": "#DA2F0C",
+      "color_button_text": "#ffffff",
+      "share_pinterest": true,
+      "checkout_body_background_image": "",
+      "type_base_font": "muli_n4",
+      "sections": {
+        "footer": {
+          "settings": {
+            "color_footer_bg": "#f8f8f8",
+            "color_footer_text": "#6d6d6d"
+          },
+          "blocks": {
+            "newsletter": {
+              "settings": {},
+              "type": "newsletter"
+            },
+            "link_list": {
+              "settings": {},
+              "type": "link_list"
+            },
+            "text": {
+              "settings": {},
+              "type": "text"
+            }
+          },
+          "type": "footer",
+          "block_order": [
+            "link_list",
+            "text",
+            "newsletter"
+          ]
+        },
+        "hero": {
+          "settings": {
+            "hero_size": "x-large",
+            "text_size": "large",
+            "alignment": "center"
+          },
+          "type": "hero"
+        },
+        "featured-collections": {
+          "settings": {
+            "show_vendor": true,
+            "grid": 3,
+            "rows": 1,
+            "show_view_all": true
+          },
+          "type": "collection"
+        },
+        "1492033809691": {
+          "settings": {},
+          "type": "map"
+        },
+        "collection-template": {
+          "settings": {
+            "layout": "grid",
+            "tags_enable": true,
+            "show_vendor": false,
+            "grid": 2,
+            "show_collection_image": true,
+            "rows": 2,
+            "sort_enable": true
+          },
+          "type": "collection-template"
+        },
+        "1492033924902": {
+          "settings": {
+            "title": ""
+          },
+          "blocks": {
+            "1492033924902-0": {
+              "settings": {
+                "align_text": "center",
+                "width": "100%",
+                "alignment": "center"
+              },
+              "type": "text"
+            }
+          },
+          "type": "custom-content",
+          "block_order": [
+            "1492033924902-0"
+          ]
+        },
+        "article-template": {
+          "settings": {
+            "show_share_buttons": true,
+            "blog_show_date": true,
+            "blog_show_author": true
+          },
+          "type": "article-template"
+        },
+        "product-template": {
+          "settings": {
+            "enable_video_looping": false,
+            "show_vendor": false,
+            "media_size": "medium",
+            "show_share_buttons": true,
+            "enable_image_zoom": true,
+            "show_quantity_selector": false
+          },
+          "type": "product-template"
+        },
+        "blog-template": {
+          "settings": {
+            "layout": "grid",
+            "blog_show_date": false,
+            "blog_show_author": true
+          },
+          "type": "blog-template"
+        },
+        "header": {
+          "settings": {
+            "color_bg": "#162950",
+            "align_logo": "left",
+            "logo_max_width": 135,
+            "color_text": "#ffffff",
+            "logo": "",
+            "message": true,
+            "main_linklist": "main-menu"
+          },
+          "type": "header"
+        },
+        "slideshow": {
+          "settings": {
+            "text_size": "medium",
+            "autorotate": false,
+            "autorotate_speed": 5,
+            "slideshow_height": "medium"
+          },
+          "blocks": {
+            "1492095993817": {
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              },
+              "type": "image"
+            },
+            "slideshow-0": {
+              "settings": {
+                "image": "",
+                "alignment": "center center"
+              },
+              "type": "image"
+            }
+          },
+          "type": "slideshow",
+          "block_order": [
+            "slideshow-0",
+            "1492095993817"
+          ]
+        },
+        "1492096252560": {
+          "settings": {
+            "grid": 3
+          },
+          "blocks": {
+            "1492096252560-1": {
+              "settings": {},
+              "type": "featured_collection"
+            },
+            "1492096252560-0": {
+              "settings": {},
+              "type": "featured_collection"
+            },
+            "1492096252560-2": {
+              "settings": {},
+              "type": "featured_collection"
+            }
+          },
+          "type": "collection-list",
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ]
+        },
+        "cart-template": {
+          "settings": {
+            "cart_notes_enable": false
+          },
+          "type": "cart-template"
+        },
+        "1492033877875": {
+          "settings": {},
+          "blocks": {
+            "1492033877875-0": {
+              "settings": {},
+              "type": "quote"
+            }
+          },
+          "type": "quotes",
+          "block_order": [
+            "1492033877875-0"
+          ]
+        }
+      },
+      "social_snapchat_link": "",
+      "color_body_bg": "#f8f8f8",
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "slideshow",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ],
+      "type_base_size": 18,
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "color_text_field_border": "#909090",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "color_borders": "#e4e4e4",
+      "color_text_field": "#ffffff",
+      "checkout_button_color": "#23314e",
+      "type_header_font": "muli_n6",
+      "social_twitter_link": "",
+      "checkout_logo_image": ""
+    },
+    "Default": {
+      "content_for_index": [
+        "hero-1",
+        "feature-row",
+        "feature-columns",
+        "collection",
+        "hero-2",
+        "quotes",
+        "image-bar"
+      ],
+      "sections": {
+        "hero-1": {
+          "settings": {
+            "hero_size": "large",
+            "text_size": "large"
+          },
+          "type": "hero"
+        },
+        "hero-2": {
+          "settings": {
+            "text_size": "large"
+          },
+          "type": "hero"
+        },
+        "feature-row": {
+          "settings": {},
+          "type": "feature-row"
+        },
+        "footer": {
+          "settings": {
+            "show_payment_icons": true
+          },
+          "blocks": {
+            "footer-1": {
+              "settings": {},
+              "type": "newsletter"
+            },
+            "footer-0": {
+              "settings": {},
+              "type": "link_list"
+            }
+          },
+          "type": "footer",
+          "block_order": [
+            "footer-0",
+            "footer-1"
+          ]
+        },
+        "image-bar": {
+          "settings": {},
+          "blocks": {
+            "image-bar-2": {
+              "settings": {},
+              "type": "image"
+            },
+            "image-bar-1": {
+              "settings": {},
+              "type": "image"
+            },
+            "image-bar-0": {
+              "settings": {},
+              "type": "image"
+            }
+          },
+          "type": "image-bar",
+          "block_order": [
+            "image-bar-0",
+            "image-bar-1",
+            "image-bar-2"
+          ]
+        },
+        "header": {
+          "settings": {},
+          "type": "header"
+        },
+        "collection": {
+          "settings": {
+            "grid": 4
+          },
+          "type": "collection"
+        },
+        "feature-columns": {
+          "settings": {
+            "title": ""
+          },
+          "blocks": {
+            "feature-columns-2": {
+              "settings": {},
+              "type": "text_block"
+            },
+            "feature-columns-1": {
+              "settings": {},
+              "type": "text_block"
+            },
+            "feature-columns-0": {
+              "settings": {},
+              "type": "text_block"
+            }
+          },
+          "type": "feature-columns",
+          "block_order": [
+            "feature-columns-0",
+            "feature-columns-1",
+            "feature-columns-2"
+          ]
+        },
+        "quotes": {
+          "settings": {
+            "title": ""
+          },
+          "blocks": {
+            "quotes-0": {
+              "settings": {},
+              "type": "quote"
+            },
+            "quotes-1": {
+              "settings": {},
+              "type": "quote"
+            },
+            "quotes-2": {
+              "settings": {},
+              "type": "quote"
+            }
+          },
+          "type": "quotes",
+          "block_order": [
+            "quotes-0",
+            "quotes-1",
+            "quotes-2"
+          ]
+        }
+      }
+    }
+  }
+}
